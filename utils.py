@@ -377,7 +377,7 @@ def humanbytes(size):
         n += 1
     return str(round(size, 2)) + " " + Dic_powerN[n] + 'B'
 
-async async def get_shortlink(link):
+async def get_shortlink(link):
     https = link.split(":")[0]
     if "http" == https:
         https = "https"
