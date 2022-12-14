@@ -239,23 +239,14 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    buttons = [
-        [
-            InlineKeyboardButton('✘Updates Channel', url='https://telegram.dog/MoviGenX'),
-            InlineKeyboardButton('Bot Updates ✘', url='https://telegram.dog/MoviZenXFlix')
-        ],
-        [
-            InlineKeyboardButton('✘ Discuss Group ✘', url=f'https://telegram.dog/mxCLubHouse')
-        ]
-        ]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('sᴜʙsᴄʀɪʙᴇ', url='https://youtube.com/c/GreyMattersBot') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
-                    
-
+    
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
            
