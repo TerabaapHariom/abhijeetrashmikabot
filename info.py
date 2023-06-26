@@ -82,8 +82,7 @@ if SELF_DELETE == "True":
 
     # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://telegram.dog/SouthTamilall2/24
-"
+DOWNLOAD_TEXT_URL = "https://telegram.dog/SouthTamilall2/24"
 
    # Custom Caption Under Button #
 CAPTION_BUTTON = "Updates Channel"
