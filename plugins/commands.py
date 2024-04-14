@@ -22,10 +22,10 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                InlineKeyboardButton('⚡ Updates Channel ⚡', url='https://t.me/MoviGenX')
+                InlineKeyboardButton('⚡ Updates Channel ⚡', url='https://t.me/SouthTamilall1')
             ],
             [
-                InlineKeyboardButton('⚡ Bot Updates ⚡', url='https://telegram.dog/MoviZenXFlix'),
+                InlineKeyboardButton('⚡ Bot Updates ⚡', url='https://telegram.dog/SouthTamilall1bot'),
             ],
             [
                 InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -43,10 +43,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('нσω тσ υѕє', url=f'http://telegram.dog/Links2Play/17')
+            InlineKeyboardButton('нσω тσ υѕє', url=f'http://telegram.dog/SouthTamilall2/28')
         ], [
-            InlineKeyboardButton('✘ Latest Updates', url='https://telegram.dog/MoviGenX'),
-            InlineKeyboardButton('Bot Updates ✘', url='https://telegram.dog/MoviZenXFlix')
+            InlineKeyboardButton('✘ Latest Updates', url='https://telegram.dog/SouthTamilall1'),
+            InlineKeyboardButton('Bot Updates ✘', url='https://telegram.dog/SouthTamilall1bot')
             ],[
             InlineKeyboardButton('✘ Close the Menu ✘', callback_data='close_data')
         ]]
@@ -88,10 +88,10 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('нσω тσ υѕє', url=f'http://telegram.dog/Links2Play/17')
+            InlineKeyboardButton('нσω тσ υѕє', url=f'http://telegram.dog/SouthTamilall2/28')
         ], [
-            InlineKeyboardButton('✘ Latest Updates', url='https://telegram.dog/MoviGenX'),
-            InlineKeyboardButton('Bot Updates ✘', url='https://telegram.dog/MoviZenXFlix')
+            InlineKeyboardButton('✘ Latest Updates', url='https://telegram.dog/SouthTamilall1'),
+            InlineKeyboardButton('Bot Updates ✘', url='https://telegram.dog/SouthTamilall1bot')
             ],[
             InlineKeyboardButton('✘ Close the Menu ✘', callback_data='close_data')
         ]]
